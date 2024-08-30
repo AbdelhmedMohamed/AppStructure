@@ -4,4 +4,10 @@
     <TargetFramework>net5.0</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Folder Include="WWWroot\CSS\" />
+    <Folder Include="WWWroot\Js\" />
+    <Folder Include="WWWroot\Leb\" />
+  </ItemGroup>
+
 </Project>
