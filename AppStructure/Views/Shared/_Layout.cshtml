@@ -1,0 +1,45 @@
+﻿
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+    <link href="~/leb/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+
+
+</head>
+<body>
+
+    @* start Header *@
+    <nav>
+        <center>
+
+           
+            <a asp-controller="Home" asp-action="Index" class="btn btn-primary">Home</a>
+            <a asp-controller="Home" asp-action="Index" class="btn btn-warning">About Us</a>
+            <a asp-controller="Home" asp-action="Index" class="btn btn-success">Privacy</a>
+            <a asp-controller="Home" asp-action="Index" class="btn btn-light">Contact Us</a>
+            <a asp-controller="Home" asp-action="Index" class="btn btn-danger">Ligin</a>
+            <a asp-controller="Home" asp-action="Index" class="btn btn-info">Register</a>
+        </center>
+    </nav>
+
+    @*  End Header *@
+
+    <div>
+        @RenderBody()
+    </div>
+
+    @* start Footer *@
+    <footer>
+        <center>
+            <p>copyrights &copy; for route @DateTime.Now.Year </p>
+        </center>
+    </footer>
+
+    @* End Footer *@
+
+</body>
+</html>
